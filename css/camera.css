@@ -1,8 +1,7 @@
 @font-face {
-    font-family: "Pinewood";
-    src: url('PINEWOOD.ttf');
+    font-family: "Klondike";
+    src: url('Klondike.ttf');
 }
-@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great);
 /*========================================================
                         Camera
 =========================================================*/
@@ -21,8 +20,8 @@
   padding: 0 20px 15px;
   display: inline-block;
   overflow: hidden;
-  font-family: 'Fredericka the Great';
-  font-size: 150px;
+  font-family: 'Klondike';
+  font-size: 200px;
   line-height: 220px;
   font-weight: 400;
   color: #ffffff;
@@ -50,6 +49,7 @@
 }
 .camera_wrap img {
   max-width: none !important;
+  filter: brightness(80%);
 }
 .camera_fakehover {
   height: 100%;
