@@ -1,433 +1,241 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Full-Circle-Website</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
 
-        <!--<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>-->
-        <link rel="stylesheet" href="assets/css/fonticons.css">
-        <link rel="stylesheet" href="assets/fonts/stylesheet.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
 
+    <!--[if lt IE 9]>
+    <html class="lt-ie9">
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a> 
+    </div>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+ 
+    <script src='js/device.min.js'></script> 
+</head>
 
-        <!--For Plugins external css-->
-        <link rel="stylesheet" href="assets/css/plugins.css" />
+<body>
+<div class="page">
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <header>
 
-        <!--Theme custom css -->
-        <link rel="stylesheet" href="assets/css/style.css">
-
-        <!--Theme Responsive css-->
-        <link rel="stylesheet" href="assets/css/responsive.css" />
-
-        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-		<div class='preloader'><div class='loaded'>&nbsp;</div></div>
-        <!--Home page style-->
-        <header id="main_menu" class="header">
-            <div class="main_menu_bg navbar-fixed-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="nave_menu">
-                            <nav class="navbar navbar-default">
-                                <div class="container-fluid">
-                                    <!-- Brand and toggle get grouped for better mobile display -->
-                                    <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                        
-                                    </div>
-
-                                    <!-- Collect the nav links, forms, and other content for toggling -->
-                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                                        <ul class="nav navbar-nav">
-                                            <li><a href="#home">Home</a></li>
-                                            <li><a href="#whatido">What i do</a></li>
-                                            <li><a href="#myworks">My works</a></li>
-                                            <li><a href="#about">About</a></li>
-                                            <li><a href="#contact">Contact</a></li>
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </nav>
-                        </div>	
+        <div class="camera_container">
+            <div id="camera" class="camera_wrap">
+                <div data-src="images/slide01.jpg">
+                    <div class="camera_caption fadeIn">
                     </div>
-
                 </div>
-
-            </div>
-        </header> <!--End of header -->
-
-
-
-        <section id="home" class="home">
-            <div class="home_overlay">
-                <div class="container">
-                    <div class="row">
-						
-						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-						  <!-- Indicators -->
-						  <ol class="carousel-indicators">
-							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-						  </ol>
-
-						  <!-- Wrapper for slides -->
-						<div class="carousel-inner" role="listbox">
-							<div class="item active">
-								 <div class="carousel-caption">
-									<p>Full Circle Farm</p>
-									<div class="btn_header">
-										<a href="" class="btn ">LEARN MORE</a>
-									</div>
-								</div>
-								<img src="assets/images/slider.jpg" alt="...">
-							</div>
-							<div class="item">
-								<div class="carousel-caption">
-									<p>Produce</p>
-									<div class="btn_header">
-										<a href="" class="btn ">LEARN MORE</a>
-									</div>
-								</div>
-								<img src="assets/images/slider2.jpg" alt="...">
-							</div>
-							<div class="item">
-								<div class="carousel-caption">
-									<p>Animals</p>
-									<div class="btn_header">
-										<a href="" class="btn ">LEARN MORE</a>
-									</div>
-								</div>
-								<img src="assets/images/slider3.jpg" alt="...">
-							</div>
-						</div>
-
-
-						</div>						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						<div class="scrolldown">
-							<a href="#whatido" class="scroll_btn"></a>
-						</div>
-						
-						
+                <div data-src="images/slide02.jpg">
+                    <div class="camera_caption fadeIn">
+                    </div>
+                </div>
+                <div data-src="images/slide03.jpg">
+                    <div class="camera_caption fadeIn">
                     </div>
                 </div>
             </div>
-        </section><!-- End of Banner Section -->
 
-
-        
-
-        <section id="whatido" class="whatido">
-            <div class="container">
-                <div class="row">
-					<div class="col-md-6 col-sm-6 col-xs-12">
-						<div class="head_title text-center wow fadeInLeft"  data-wow-duration="3s">
-							<h2>What I Do</h2>
-							<div class="separator"></div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-sm-6 col-xs-12">
-						<div class="head_title_rigth wow fadeInRight"  data-wow-duration="3s">
-							<p>Fingerstache green juice semiotics quinoa, truffaut letterpress wolf photo booth ugh biodiesel mumblecore brunch. Meh austin vinyl banh mi, gluten-free chillwave scenester kombucha street art. Before they sold out lumbersexual chillwave, cold-pressed mumblecore beard pickled letterpress normcore crucifix.</p>
-						</div>
-					</div><!-- End of col-sm-5 -->
-                    <div class="main_whatido_content text-center">
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="single_whatido wow fadeInDown"  data-wow-duration="1s">
-								<div class="single_whatido_img">
-									<img src="assets/images/what1.png" alt="" />
-								</div>
-								<h3>ultricies</h3>
-								<p>Four dollar toast messenger bag green juice, organic cliche tofu synth small batch locavore austin. Squid mlkshk authe ntic pinterest, pour-over gastropub XOXO seitan sartorial humblebrag. </p>
-							</div>
-						</div>
-						
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="single_whatido wow fadeInDown"  data-wow-duration="3s">
-								<div class="single_whatido_img">
-									<img src="assets/images/what2.png" alt="" />
-								</div>
-								<h3>porttitor</h3>
-								<p>Four dollar toast messenger bag green juice, organic cliche tofu synth small batch locavore austin. Squid mlkshk authe ntic pinterest, pour-over gastropub XOXO seitan sartorial humblebrag. </p>
-							</div>
-						</div>
-						
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="single_whatido wow fadeInDown"  data-wow-duration="4s">
-								<div class="single_whatido_img">
-									<img src="assets/images/what3.png" alt="" />
-								</div>
-								<h3>Curabitur</h3>
-								<p>Four dollar toast messenger bag green juice, organic cliche tofu synth small batch locavore austin. Squid mlkshk authe ntic pinterest, pour-over gastropub XOXO seitan sartorial humblebrag. </p>
-							</div>
-						</div>
-                    </div>
-                </div>
+            <div class="brand wow fadeIn">
+                <h1 class="brand_name">
+                    <a href="./">Full Circle</a>
+                </h1>
             </div>
-        </section><!-- End of Features Section -->
-
-        <section id="myworks" class="myworks">
-            <div class="container">
-                <div class="row">	
-					<div class="col-md-1 col-md-offset-5 col-sm-1 col-sm-offset-5 col-xs-12 no-padding">
-						<div class="scrolldownall text-right">
-							<a href="#about" class="scroll_btnall"></a>
-						</div>
-					</div><!-- End of col-sm-2 -->
-					<div class="col-md-6 col-sm-6 col-xs-12">
-						<div class="head_title text-center wow fadeInLeft"  data-wow-duration="2s">
-							<h2>My Works</h2>
-							<div class="separator"></div>
-						</div>
-					</div>
-					
-                </div>
-            </div>
-			
-			<div class="main_myworks_content text-center">
-				<div class="single_work_colum col-md-3 col-sm-6 col-xs-12 wow fadeInLeft"  data-wow-duration="1.5s">
-					<div class="single_work">
-						<img src="assets/images/work1.jpg" alt="" />
-					</div>
-				</div>
-				<div class="single_work_colum col-md-3 col-sm-6 col-xs-12 wow fadeInLeft"  data-wow-duration="2s">
-					<div class="single_work">
-						<img src="assets/images/work2.jpg" alt="" />
-					</div>
-				</div>
-				<div class="single_work_colum col-md-3 col-sm-6 col-xs-12 wow fadeInLeft"  data-wow-duration="3s">
-					<div class="single_work">
-						<img src="assets/images/work3.jpg" alt="" />
-					</div>
-				</div>
-				<div class="single_work_colum col-md-3 col-sm-6 col-xs-12 wow fadeInLeft"  data-wow-duration="4s">
-					<div class="single_work">
-						<img src="assets/images/work4.jpg" alt="" />
-					</div>
-				</div>
-				
-				<div class="btn_bg wow fadeInLeft"  data-wow-duration="3s">
-				<a href="" class="btn">load More</a>
-				</div>
-			</div>
-        </section><!-- End of Features Section -->
-		
-		
-		
-        <section id="about" class="about">
-            <div class="container">
-                <div class="row">
-					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft"  data-wow-duration="2s">
-						<div class="head_title text-center">
-							<h2>About me</h2>
-							<div class="separator"></div>
-						</div>
-					</div>
-					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight"  data-wow-duration="2s">
-						<div class="head_title_rigth">
-							<p>Fingerstache green juice semiotics quinoa, truffaut letterpress wolf photo booth ugh biodiesel mumblecore brunch. Meh austin vinyl banh mi, gluten-free chillwave scenester kombucha street art. Before they sold out lumbersexual chillwave, cold-pressed mumblecore beard pickled letterpress normcore crucifix.</p>
-						</div>
-					</div>
-                    <div class="main_about_content text-center">
-                       <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInLeft"  data-wow-duration="1.5s">
-							<div class="single_about">
-								<div class="single_about_img">
-									<img src="assets/images/skil1.png" alt="" />
-								</div>
-								<h3><span class="statistic-counter">30.25</span>Curabitur</h3>
-								<p>Four dollar toast messenger bag green juice, organic cliche tofu synth small batch locavore austin. Squid mlkshk authe ntic pinterest, pour-over gastropub XOXO seitan sartorial humblebrag. </p>
-							</div>
-						</div>
-						
-                       <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInLeft"  data-wow-duration="2s">
-							<div class="single_about">
-								<div class="single_about_img">
-									<img src="assets/images/skil1.png" alt="" />
-								</div>
-								<h3><span class="statistic-counter">20.75</span>spanCurabitur</h3>
-								<p>Four dollar toast messenger bag green juice, organic cliche tofu synth small batch locavore austin. Squid mlkshk authe ntic pinterest, pour-over gastropub XOXO seitan sartorial humblebrag. </p>
-							</div>
-						</div>
-						
-                       <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInLeft"  data-wow-duration="3s">
-							<div class="single_about">
-								<div class="single_about_img">
-									<img src="assets/images/skil1.png" alt="" />
-								</div>
-								<h3><span class="statistic-counter">15.20</span>Curabitur</h3>
-								<p>Four dollar toast messenger bag green juice, organic cliche tofu synth small batch locavore austin. Squid mlkshk authe ntic pinterest, pour-over gastropub XOXO seitan sartorial humblebrag. </p>
-							</div>
-						</div> 
-                    </div>
-                </div>
-            </div>
-        </section><!-- End of Features Section -->
-
-       
-
-
-
-
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="main_contact">
-                        
-                        <div class="contact_content">
-                            
-                            <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft"  data-wow-duration="2s">
-								<div class="contact_message">
-									<form action="#" id="formid">
-										<label for="">Name</label>
-										<div class="form-group">
-											<input type="text" class="form-control" name="name" placeholder="name" required="">
-										</div>
-										
-										<label for="">Email</label>
-										<div class="form-group">
-											<input type="email" class="form-control" name="email" placeholder="Email" required="">
-										</div>
-
-										<label for="">Message</label>
-										<div class="form-group">
-											<textarea class="form-control" name="message" rows="8" placeholder="Message"></textarea>
-										</div>
-
-										<div class="message_btn text-center">
-											<div class="btn_bg">
-												<a href="" class="btn">Send</a>
-											</div>
-										</div>
-									</form>
-								</div>
-							</div>
-
-                            <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight"  data-wow-duration="2s">
-								<div class="contact_socail_bookmark_area">
-									<div class="head_title text-center">
-										<h2>GET IN TOUCH</h2>
-										<div class="separator"></div>
-									</div>
-									
-									
-									<div class="contact_socail_bookmark">
-										<a href=""><img src="assets/images/fb.png" alt="" /></a>
-										<a href=""><img src="assets/images/fb.png" alt="" /></a>
-										<a href=""><img src="assets/images/fb.png" alt="" /></a>
-										<a href=""><img src="assets/images/fb.png" alt="" /></a>
-										<a href=""><img src="assets/images/fb.png" alt="" /></a>
-									</div>
-									
-									<div class="contact_adress">
-										<h3>Address:</h3>
-										<span>78 S Stanley Hill Rd </span>
-										<span>Vassalboro, ME 04989</span>
-									</div>
-									
-									<div class="row">
-										<div class="col-md-6 col-sm-6 col-xs-12">
-											<div class="single_contact_phone">
-												<h3>Phone:</h3>
-												<span>+1 (207) 923-4216</span>
-											</div>
-										</div>
-										
-										<div class="col-md-6 col-sm-6 col-xs-12">
-											<div class="single_contact_phone">
-												<h3>Email:</h3>
-												<span>mrwelchsvms@gmail.com</span>
-											</div>
-										</div>
-									</div>
-									
-								</div>
-							</div>
-                        </div>
-                    </div>
-                </div>
-				
-				<div class="row">
-					<div class="footer_copyright">
-					
-						<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInDown"  data-wow-duration="3s">
-							<div class="single_copyirgth text-left">
-								<p>Copyright 2017 &copy; by Full Circle Farm</p>
-							</div>
-						</div>
-						
-						<div class="col-md-6 col-sm-6 col-xs-12">
-							<div class="single_copyirgth wow fadeInUp"  data-wow-duration="2s">
-								<ul class="navbar-right">
-									<li class="active"><a href="#home">Home</a></li>
-									<li><a href="#whatido">What i do</a></li>
-									<li><a href="#myworks">My works</a></li>
-									<li><a href="#about">About</a></li>
-									<li><a href="#contact">Contact</a></li>
-								</ul>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-            </div>
-        </section><!-- End of contact With Map Section -->
-
-        
-
-       
-
-
-
-
-
-        <!-- STRAT SCROLL TO TOP -->
-
-        <div class="scrollup">
-            <a href="#"><i class="fa fa-chevron-up"></i></a>
         </div>
 
-        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="assets/js/vendor/bootstrap.min.js"></script>
-        <script src="assets/js/vendor/isotope.min.js"></script>
+    </header>
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+    <main>
+        <section class="well">
+            <div class="container">
+                <h2><em>Welcome</em>to Our Farm</h2>
+                <div class="row">
+                    <div class="grid_6">
+                        <div class="img img__border"><div class="lazy-img" style="padding-bottom: 63.0282%;"><img data-src="images/page-1_img01.jpg" alt=""></div></div>
+                        <p class="center indents-1">We are a MOFGA certified organic, family-run farm in East Vassalboro, Maine. Located near China Lake, we have a market garden and produce a plethora of fruits, vegetables, berries, eggs and greens. We also source local and organic yogurt, raw jersey milk, grass-fed beef, cheese, pork, and poultry.</p>
+                    </div>
+                    <div class="grid_6">
+                        <div class="img img__border"><div class="lazy-img" style="padding-bottom: 63.0282%;"><img data-src="images/page-1_img02.jpg" alt=""></div></div>
+                        <p class="center indents-1">We offer short-term farm stays through AirBnB and longer, working stays with Work Away and Help Exchange. Swing by our CSA and Farmers Market on Saturdays from 10 am - noon!</p>
+                    </div>
+                </div>
+                <div class="decoration"><a href="#" class="btn">Read more</a></div>
+                <h2><em>Our</em>Food</h2>
+            </div>            
+            <div class="gallery">
+                <div class="gallery_col-1">
+                    <a data-fancybox-group="gallery" href="images/page-1_img03.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 93.96551724137931%;">
+                        <img data-src="images/page-1_img03.jpg" alt="">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>Lorem Blandit</em></p>
+                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a data-fancybox-group="gallery" href="images/page-1_img04_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 74.13793103448276%;">
+                        <img data-src="images/page-1_img04.jpg" alt="">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>Lorem Blandit</em></p>
+                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a data-fancybox-group="gallery" href="images/page-1_img05_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 94.6551724137931%;">
+                        <img data-src="images/page-1_img05.jpg" alt="">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>Lorem Blandit</em></p>
+                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery_col-2">
+                    <a data-fancybox-group="gallery" href="images/page-1_img06_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 52.48322147651007%;">
+                        <img data-src="images/page-1_img06.jpg" alt="">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>Lorem Blandit</em></p>
+                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a data-fancybox-group="gallery" href="images/page-1_img07_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 55.97315436241611%;">
+                        <img data-src="images/page-1_img07.jpg" alt="">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>Lorem Blandit</em></p>
+                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a data-fancybox-group="gallery" href="images/page-1_img08_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 96.10738255033557%;">
+                        <img data-src="images/page-1_img08.jpg" alt="">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>Lorem Blandit</em></p>
+                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery_col-3">
+                    <a data-fancybox-group="gallery" href="images/page-1_img09_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 93.69676320272572%;">
+                        <img data-src="images/page-1_img09.jpg" alt="">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>Watermelon</em></p>
+                                <p>$...</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a data-fancybox-group="gallery" href="images/page-1_img10_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 72.23168654173765%;">
+                        <img data-src="images/page-1_img10.jpg" alt="">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>Tomatoes</em></p>
+                                <p>Red: $... Green: $...</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a data-fancybox-group="gallery" href="images/page-1_img11_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 93.69676320272572%;">
+                        <img data-src="images/page-1_img11.jpg" alt="">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>Lorem Blandit</em></p>
+                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="parallax parallax1" data-parallax-speed="-0.4">
+            <div class="container">
+                <h2><em>Our </em>Experience</h2>
+                <p class="indents-2">Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci </p>
+                <a href="#" class="btn">View full menu</a>
+            </div>
+        </section>
+        <section class="well well__offset-1 bg-1">
+            <div class="container">
+                <h2><em>Our </em>Cooks</h2>
+                <div class="row row__offset-1">
+                    <div class="grid_4">
+                        <figure>
+                            <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/page-1_img12.jpg" alt=""></div>
+                            <figcaption>Kevin Grey</figcaption>
+                        </figure>
+                        <h3>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl </h3>
+                        <p>Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla.</p>
+                    </div>
+                    <div class="grid_4">
+                        <figure>
+                            <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/page-1_img13.jpg" alt=""></div>
+                            <figcaption>Linda Klein</figcaption>
+                        </figure>
+                        <h3>Oeteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl </h3>
+                        <p>Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla.</p>
+                    </div>
+                    <div class="grid_4">
+                        <figure>
+                            <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/page-1_img14.jpg" alt=""></div>
+                            <figcaption>Ann Shelton</figcaption>
+                        </figure>
+                        <h3>Koteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl </h3>
+                        <p>Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla.</p>
+                    </div>
+                </div>
+                <div class="decoration"><a href="#" class="btn">Read more</a></div>
+            </div>
+        </section>
+        <section class="well well__offset-2">
+            <div class="container center">
+                <h2><em>Visit </em>Us</h2>
+                <p class="indents-2">Fnteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol.</p>
+                <address class="address-1">
+                    <dl><dt>Address:</dt> <dd>78 S Stanley Hill Rd Vassalboro, Maine 04989</dd></dl>
+                    <p><em>+1 (207) 923-4216</em></p>
+                </address>
+            </div>
+        </section>
+    </main>
 
-        <script src="assets/js/jquery.easypiechart.min.js"></script>
-        <script src="assets/js/jquery.mixitup.min.js"></script>
-        
-            
-        <script src="assets/js/plugins.js"></script>
-        <script src="assets/js/main.js"></script>
-        
-    </body>
+    <!--========================================================
+                              FOOTER
+    =========================================================-->
+    <footer>
+        <div class="container">
+            <ul class="socials">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-tumblr"></a></li>
+                <li><a href="#" class="fa fa-google-plus"></a></li>
+            </ul>
+            <div class="copyright">© <span id="copyright-year"></span> |
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/script.js"></script>
+</body>
 </html>
