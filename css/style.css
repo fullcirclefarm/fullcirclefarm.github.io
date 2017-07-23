@@ -13,8 +13,8 @@
 body {
   background: #a95858;
   color: #333;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-family: 'Open Sans', sans-serif, bold;
+  font-size: 20px;
   line-height: 20px;
   font-weight: 400px;
   -webkit-text-size-adjust: none;
