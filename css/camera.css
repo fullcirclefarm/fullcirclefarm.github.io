@@ -200,3 +200,41 @@
 .camera_pag_ul li > span {
   display: none;
 }
+
+.camera_thumbs_cont {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 198px;
+  text-align: center;
+}
+.camera_thumbs_cont ul {
+  display: inline-block;
+  width: auto !important;
+}
+.camera_thumbs_cont ul li {
+  float: left;
+  cursor: pointer;
+}
+.camera_thumbs_cont ul li img {
+  max-width: 100% !important;
+}
+.camera_thumbs_cont ul li + li {
+  margin-left: 80px;
+}
+.camera_thumbs_cont ul li img {
+  border-radius: 63px;
+}
+@media (max-width: 979px) {
+  .camera_thumbs_cont ul li {
+    width: 70px;
+  }
+  .camera_thumbs_cont ul li + li {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1700px) {
+  .camera_thumbs_cont {
+    bottom: 30px;
+  }
+}

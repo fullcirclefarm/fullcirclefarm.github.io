@@ -12,18 +12,6 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
-
-    <!--[if lt IE 9]>
-    <html class="lt-ie9">
-    <div style=' clear: both; text-align:center; position: relative;'>
-        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
-            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
-                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
-        </a> 
-    </div>
-    <script src="js/html5shiv.js"></script>
-    <![endif]-->
- 
     <script src='js/device.min.js'></script> 
 </head>
 
@@ -36,15 +24,15 @@
 
         <div class="camera_container">
             <div id="camera" class="camera_wrap">
-                <div data-src="images/slide01.jpg">
+                <div data-thumb="images/slide01_thumb.jpg" data-src="images/slide01.jpg">
                     <div class="camera_caption fadeIn">
                     </div>
                 </div>
-                <div data-src="images/slide02.jpg">
+                <div data-thumb="images/slide02_thumb.jpg" data-src="images/slide02.jpg">
                     <div class="camera_caption fadeIn">
                     </div>
                 </div>
-                <div data-src="images/slide03.jpg">
+                <div data-thumb="images/slide03_thumb.jpg" data-src="images/slide03.jpg">
                     <div class="camera_caption fadeIn">
                     </div>
                 </div>
@@ -75,7 +63,7 @@
                         <p class="center indents-1">We offer short-term farm stays through AirBnB and longer, working stays with Work Away and Help Exchange. Swing by our CSA and Farmers Market on Saturdays from 10 am - noon!</p>
                     </div>
                 </div>
-                <div class="decoration"><a href="#" class="btn">Read more</a></div>
+                
                 <h2><em>Our</em>Food</h2>
             </div>            
             <div class="gallery">
@@ -84,8 +72,8 @@
                         <img data-src="images/page-1_img03.jpg" alt="">
                         <div class="gallery_overlay">
                             <div class="gallery_caption">
-                                <p><em>Lorem Blandit</em></p>
-                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                                <p><em>Garlic</em></p>
+                                <p>$...</p>
                             </div>
                         </div>
                     </a>
@@ -93,8 +81,8 @@
                         <img data-src="images/page-1_img04.jpg" alt="">
                         <div class="gallery_overlay">
                             <div class="gallery_caption">
-                                <p><em>Lorem Blandit</em></p>
-                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                                <p><em>Green Beans</em></p>
+                                <p>$...</p>
                             </div>
                         </div>
                     </a>
@@ -102,8 +90,8 @@
                         <img data-src="images/page-1_img05.jpg" alt="">
                         <div class="gallery_overlay">
                             <div class="gallery_caption">
-                                <p><em>Lorem Blandit</em></p>
-                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                                <p><em>Berries</em></p>
+                                <p>Blackberries: $... Raspberries: $... Strawberries: $...</p>
                             </div>
                         </div>
                     </a>
@@ -113,8 +101,8 @@
                         <img data-src="images/page-1_img06.jpg" alt="">
                         <div class="gallery_overlay">
                             <div class="gallery_caption">
-                                <p><em>Lorem Blandit</em></p>
-                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                                <p><em>Radishes</em></p>
+                                <p>$...</p>
                             </div>
                         </div>
                     </a>
@@ -122,8 +110,8 @@
                         <img data-src="images/page-1_img07.jpg" alt="">
                         <div class="gallery_overlay">
                             <div class="gallery_caption">
-                                <p><em>Lorem Blandit</em></p>
-                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                                <p><em>Some other food</em></p>
+                                <p>dolla dolla bills son</p>
                             </div>
                         </div>
                     </a>
@@ -131,8 +119,8 @@
                         <img data-src="images/page-1_img08.jpg" alt="">
                         <div class="gallery_overlay">
                             <div class="gallery_caption">
-                                <p><em>Lorem Blandit</em></p>
-                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                                <p><em>Potatoes</em></p>
+                                <p>$...</p>
                             </div>
                         </div>
                     </a>
@@ -160,8 +148,8 @@
                         <img data-src="images/page-1_img11.jpg" alt="">
                         <div class="gallery_overlay">
                             <div class="gallery_caption">
-                                <p><em>Lorem Blandit</em></p>
-                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                                <p><em>Eggs / Chicken(?)</em></p>
+                                <p>$... </p>
                             </div>
                         </div>
                     </a>
@@ -170,38 +158,37 @@
         </section>
         <section class="parallax parallax1" data-parallax-speed="-0.4">
             <div class="container">
-                <h2><em>Our </em>Experience</h2>
-                <p class="indents-2">Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci </p>
-                <a href="#" class="btn">View full menu</a>
+                <h2><em>Our </em>Story</h2>
+                <p class="indents-2">Moving personal story or something else this is free space </p>
             </div>
         </section>
         <section class="well well__offset-1 bg-1">
             <div class="container">
-                <h2><em>Our </em>Cooks</h2>
+                <h2><em>Meet </em>the Team</h2>
                 <div class="row row__offset-1">
                     <div class="grid_4">
                         <figure>
                             <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/page-1_img12.jpg" alt=""></div>
-                            <figcaption>Kevin Grey</figcaption>
+                            <figcaption>Person 1</figcaption>
                         </figure>
-                        <h3>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl </h3>
-                        <p>Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla.</p>
+                        <h3>Head Farmer</h3>
+                        <p>Insert Bio Here</p>
                     </div>
                     <div class="grid_4">
                         <figure>
                             <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/page-1_img13.jpg" alt=""></div>
-                            <figcaption>Linda Klein</figcaption>
+                            <figcaption>Person 2</figcaption>
                         </figure>
-                        <h3>Oeteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl </h3>
-                        <p>Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla.</p>
+                        <h3>Maine's Best Berry Picker</h3>
+                        <p>List berry picking titles here</p>
                     </div>
                     <div class="grid_4">
                         <figure>
                             <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/page-1_img14.jpg" alt=""></div>
-                            <figcaption>Ann Shelton</figcaption>
+                            <figcaption>Person 3</figcaption>
                         </figure>
-                        <h3>Koteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl </h3>
-                        <p>Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla.</p>
+                        <h3>Farmboy</h3>
+                        <p>As you wish</p>
                     </div>
                 </div>
                 <div class="decoration"><a href="#" class="btn">Read more</a></div>
@@ -209,8 +196,8 @@
         </section>
         <section class="well well__offset-2">
             <div class="container center">
-                <h2><em>Visit </em>Us</h2>
-                <p class="indents-2">Fnteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol.</p>
+                <h2><em>Contact </em>Us</h2>
+                <p class="indents-2">Farmer's Market is open every Saturday from 10 am - noon. Come on down or give us a call if you're looking for produce or even lonely and just want to chat.</p>
                 <address class="address-1">
                     <dl><dt>Address:</dt> <dd>78 S Stanley Hill Rd Vassalboro, Maine 04989</dd></dl>
                     <p><em>+1 (207) 923-4216</em></p>
@@ -225,7 +212,7 @@
     <footer>
         <div class="container">
             <ul class="socials">
-                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="https://www.facebook.com/FullCircleMaine/" class="fa fa-facebook"></a></l>
                 <li><a href="#" class="fa fa-tumblr"></a></li>
                 <li><a href="#" class="fa fa-google-plus"></a></li>
             </ul>
