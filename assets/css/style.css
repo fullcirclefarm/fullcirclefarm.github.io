@@ -318,13 +318,12 @@ Button
 
 
 .btn {
-    border: 1px solid #3c3c3c;
     display: inline-block;
     min-width: 160px;
     padding: .8em;
     height: 50px;
     text-align: center;
-    color: #3c3c3c;
+    color: transparent;
     font-style: normal;
     letter-spacing: 1px;
     margin: 0;
@@ -557,7 +556,7 @@ input:-ms-input-placeholder {
 
 /* Home Section */
 .home{
-	background-color:#ffffff;
+	background-color: #ffffff;
 }
 
 
@@ -569,10 +568,10 @@ input:-ms-input-placeholder {
 	font-size:50px;
 	font-family: 'big_johnregular';
 	line-height: 60px;
-	font-color:#ffffff;
+	font-color: #ffffff;
 }
 
-.carousel-caption .btn_bg {
+.carousel-caption .btn_header {
     background: url(../images/button.png) no-repeat center center;
     width: 65%;
     margin: 0 auto;
