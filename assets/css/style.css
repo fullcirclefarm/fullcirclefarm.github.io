@@ -557,7 +557,7 @@ input:-ms-input-placeholder {
 
 /* Home Section */
 .home{
-	background:transparent;
+	background-color:#ffffff;
 }
 
 
@@ -569,7 +569,7 @@ input:-ms-input-placeholder {
 	font-size:50px;
 	font-family: 'big_johnregular';
 	line-height: 60px;
-	color:#ffffff;
+	font-color:#ffffff;
 }
 
 .carousel-caption .btn_bg {
